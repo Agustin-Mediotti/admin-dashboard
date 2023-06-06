@@ -7,8 +7,7 @@ export const dashboardTheme = createTheme({
                 root: {
                     fontWeight:600,
                     fontSize: '0.875rem',
-                    textTransform: 'uppercase',
-                    borderRadius: 2.5,
+                    borderRadius: 7,
                     '&.MuiButton-contained': {
                         backgroundColor: '#009be5',
                         '&:hover': {
@@ -21,7 +20,10 @@ export const dashboardTheme = createTheme({
                         '&hover': {
                         backgroundColor:'transparent',
                         }
-                    }
+                    },
+                    '&.MuiButton-default': {
+                        fontWeight: '400',
+                    },
                 },
             },
         },

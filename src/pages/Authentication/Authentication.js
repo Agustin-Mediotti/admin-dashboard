@@ -1,35 +1,26 @@
 import React from 'react'
 import Grid from '@mui/material/Grid';
-import NotificationBell from '../../components/common/NotificationBell/NotificationBell';
-import BasicMenu from '../../components/common/BasicMenu/BasicMenu';
-import CommonButton from '../../components/common/CommonButton/CommonButton';
+import Header from '../../components/Header/Header';
 
 const Authentication = () => {
     const notifications = [
     {
         id: 0,
-        label: 'notification 1...'
+        label: 'Alert 1'
     },
     {
         id: 1,
-        label: 'notification 2...'
+        label: 'Alert 2'
     },
         {
         id: 2,
-        label: 'Cande te envio un zumbido'
+        label: 'Alert 3'
     }
   ]
 
   return (
     <Grid item xs={8}>
-        Authentication page.
-        <CommonButton
-          variant={'default'}
-        >Go to Docs</CommonButton>
-        <NotificationBell 
-          iconColor='primary'
-          notifications={notifications}
-        />
+        <Header title={"Authentication"} notifications={notifications} />
     </Grid>
   )
 }
